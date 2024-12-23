@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
+</head>
+<body>
+
+<h2>Responsive Table</h2>
+<p>A responsive table will display a horizontal scroll bar if the screen is too 
+small to display the full content. Resize the browser window to see the effect:</p>
+<p>To create a responsive table, add a container element (like div) with <strong>overflow-x:auto</strong> around the table element:</p>
+
+<div style="overflow-x: auto;">
+  <table>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>Adam</td>
+      <td>Johnson</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+    </tr>
+  </table>
+</div>
+
+<div>
+  <h2>Try Me</h2>
+  <p>Resize to mobile to pivot this resposive table</p>
+  <Table breakPoint={1000}>
+  <Thead>
+    <Tr>
+      <Th>Event</Th>
+      <Th>Date</Th>
+      <Th>Location</Th>
+      <Th>Organizer</Th>
+      <Th>Theme</Th>
+      <Th>Agent</Th>
+    </Tr>
+  </Thead>
+  <Tbody>
+    <Tr>
+      <Td>YGLF</Td>
+      <Td>4/9/2018</Td>
+      <Td>East Annex</Td>
+      <Td>Crimson.js</Td>
+      <Td>Javascript</Td>
+      <Td>Coston Perkins</Td>
+    </Tr>
+    <Tr>
+      <Td>Capstone Data</Td>
+      <Td>5/19/2018</Td>
+      <Td>205 Gorgas</Td>
+      <Td>OIRA</Td>
+      <Td>Data Scence</Td>
+      <Td>Jason Phillips</Td>
+    </Tr>
+    <Tr>
+      <Td>Tuscaloosa D3</Td>
+      <Td>5/31/2018</Td>
+      <Td>Monarch Cafe</Td>
+      <Td>Crimson.js</Td>
+      <Td>Data Viz</Td>
+      <Td>Michael Fox</Td>
+    </Tr>
+  </Tbody>
+</Table>
+</div>
+</body>
+</html>
+
+
